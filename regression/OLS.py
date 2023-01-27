@@ -84,5 +84,5 @@ def OLS_regression():
             pass
     regression_results.sort(key = lambda x:x[1], reverse=True)
     
-    return regression_results # Ticker, 매매수량, 회사명, 거래소, GICS Sector
+    return regression_results # [[Ticker, 매매수량, 회사명, 거래소, GICS Sector], .... [Ticker, 매매수량, 회사명, 거래소, GICS Sector]]
 print(OLS_regression())
