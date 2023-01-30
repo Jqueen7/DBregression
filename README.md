@@ -15,8 +15,18 @@
 ### 2-2. Features
 불러온 재무제표 값들을 바탕으로 30 여개의 Financial Ratios를 산출. 섹터별로 재무제표 계정에 차이가 있음에 따라서 예외처리 완료.
 
+![image](https://user-images.githubusercontent.com/122861933/215395833-8f29c825-08c7-4935-99ee-3e5ba504e051.png)
+
 ## 3. Macro
 19개의 FRED 거시경제 데이터에 금 가격, 중국 GDP 분기별 성장률 데이터를 기간에 맞게 불러와 Merge
+
+![image](https://user-images.githubusercontent.com/122861933/215394684-dfa46bf7-1e6b-465a-8035-f78610722722.png)
+
+6. 기준금리가 아니라 실효 연방기금금리를 사용한 이유는 실효 연방기금금리가 보다 당시의 상황을 면밀히 반영한다고 보았기 때문.
+
+7. 근원 CPI는 프록시로 Sticky Price CPI (비탄력적 CPI)를 사용했음. Sticky Price CPI 사용 결과 가격변동이 잦은 상품들(e.g. 중고차) 제외됨. 
+
+7, 8, 17. 명목이 아니라 근원 수치를 사용한 이유는 변수 간 다중공선성을 고려하였기 때문.
 
 ## 4. Regression
 OLS.py & OLS_BW.py
